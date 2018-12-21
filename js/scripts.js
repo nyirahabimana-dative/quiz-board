@@ -9,7 +9,9 @@ $(document).ready(function (){
                     marks= marks+10;
                                 }
                     })
+                   
                     alert(marks)
+                
                 event.preventDefault();
              });
              });
