@@ -1,27 +1,18 @@
-$(document).ready(function() {
-    $('form').submit(function(event) {
-        event.preventDefault();
 
-        var answers = [];
+$(document).ready(function (){
+    $('#blanks form').submit(function(event){
+      var marks=0;
+        var blanks=["answer1", "answer2","answer3",]
+         blanks.forEach(function(blank) {
+            var userInput = $("input:radio[name=" + blank + "]:checked" ).val();
+                if(userInput=="d"){
+                    marks= marks+10;
+                                }
+                    })
+                    alert(marks)
+                event.preventDefault();
+             });
+             });
 
-        $('.correct').each(function () {
-            answers.push($(this).prop('checked'));
-        })
-
-        console.log(answers);
-
-
-        $('#result').text("Your score is "+ getScore(answers));
-    })
-});
-function getScore(answers) {
-    var score = 0;
-
-    answers.forEach(function(answer) {
-        if (answer === true) {
-            score+10;
-        }
-    });
-
-    return score;
-}
+             
+     
