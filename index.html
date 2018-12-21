@@ -11,101 +11,149 @@
 </head>
 <body>
     <div class="container">
-        <h1>Quiz Board</h1>
+        <div class =jumbotron>
+            <h1>Quiz Board</h1>
+        </div>
         <form>
             
             <p>1.Which of the following immune cells/molecules are most effective at destroying intracellular pathogens?</p>
                 <div class="radio">
                         <label>
-                          <input type="radio" name="answer" value="question">
+                          <input type="radio" name="answer1" value="question" required>
                           a: T helper cells
                         </label>
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer1" value="question" required>
                           b:B cells
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer1" value="question" required>
                           c:Antibodies
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer1" value="question"  class="correct" required>
                         d: T cytolytic cells
                     </label>
                 </div>
             <p> 2.B cells that produce and release large amounts of antibody are called:</p>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer2" value="question" required>
                          a: Memory cells
                      </label>
                 </div>
                 <div class="radio">
                     <label>
-                         <input type="radio" name="answer" value="question">
+                         <input type="radio" name="answer2" value="question" required>
                         b:Basophils
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="answer" value="question">
-                        c: Basophils
+                        <input type="radio" name="answer2" value="question" required>
+                        c: Neutrophils
+
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer2" value="question" class="correct" required>
                         d: Plasma cells
                     </label>
                 </div>
             <p> 3.B Cells are activated by</p>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer3" value="question" required>
                             a. Complement
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer3" value="question" required>
                      b: Antibody
                     </label>
                 </div>
                  <div class="radio">
                      <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer3" value="question" required>
                     c: Interferon
           
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="answer" value="question">
-                    d: Memory cells
+                    <input type="radio" name="answer3" value="question" class="correct" required>
+                    d: Antigen
                     </label>
                  </div>
             <p> 4.The ability of the immune system to recognize self antigens versus nonself antigen is an example of Tolerance</p>
                  <div class="radio">
                         <label>
-                           <input type="radio" name="answer" value="question">
+                           <input type="radio" name="answer4" value="question"  class="correct" required>
                            a. Yes
                         </label>
                 </div>
                 <div class="radio">
                         <label>
-                        <input type="radio" name="answer" value="question">
+                        <input type="radio" name="answer4" value="question" required>
                            b: No
                         </label>
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>
         </form>
     </div>
+ <!---- <div class="container">
+        <div class =jumbotron>
+            <h1>Quiz Board</h1>
+        </div>
+        <div class="col-md-6">
+          <form name="forms"  method="post" onsubmit="return function()">
+           <div  class="form-group"
+            <label>1.Which of the following immune cells/molecules are most effective at destroying intracellular pathogens?</labe>
+                
+            <label><input type="radio" name="intracellular" value="T helper"  required> T helper cells</label>
+                          
+            <label><input type="radio" name="intracellular" value="B cells"  required> B cells </label>
+                          
+            <label><input type="radio" name="intracellular" value="Antibodies"> c:Antibodies </label>
+            <label><input type="radio" name="intracellular" value="T cytolytic" class="correct" required > T cytolytic cells      
+                    </label>
+                   
+                        
+          </div>
+          <div class="form-group">
+            <label> 2.B cells that produce and release large amounts of antibody are called:</p>
+            <label> <input type="radio" name="Antiboby" value="memory cells" required> memory cells </label>   
+            <label><input type="radio" name="Antibody" value="Basophil" required> Basophil</label>
+            <label><input type="radio" name="Antibody" value="Neutrophils" required> Neutrophils</label>
+            <label><input type="radio" name="Antibody" value="PLasma cells"  class="correct" required > Plasma cells</label>
+          </div>
+
+          <div class"form-group>
+            <label> 3.B Cells are activated by</label>
+            <label><input type="radio" name="B cells" value="Complement" required> Complement </label>
+            <label><input type="radio" name="B cells" value="Antibody" required> Antibody</label>
+            <label><input type="radio" name="B cells" value="Interferon" required>Interferon</label>
+            <label><input type="radio" name="B cells" value="Antigen"  class="correct" required> Antigen</label>
+          </div>
+          <div class="form-group">
+            <label> 4.The ability of the immune system to recognize self antigens versus nonself antigen is an example of Tolerance</label>
+            <label><input type="radio" name="tolerance" value="yes" class="correct" required>Yes</label>
+             <label><input type="radio" name="tolerance" value="no" required> No </label>
+          </div>
+          <input type="submit" class="btn btn-primary" value="Submit">
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h1 id="result"></h1>
+        </div>-->
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
 
