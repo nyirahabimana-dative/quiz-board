@@ -10,7 +10,7 @@ $(document).ready(function (){
                                 }
                     })
                    
-                    alert(marks)
+                 alert("your score is: "+ marks + "/30" )
                 
                 event.preventDefault();
              });
